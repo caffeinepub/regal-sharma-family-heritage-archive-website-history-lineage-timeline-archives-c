@@ -1,0 +1,38 @@
+export const archiveItems = [
+  {
+    id: 'photo-1',
+    category: 'Photographs',
+    title: 'Akhnoor Fort - Historical View',
+    date: 'Early 20th Century',
+    description: 'A historical photograph of Akhnoor Fort, the military stronghold of the Sharma family. This image captures the architectural grandeur and strategic positioning of the fort during the family\'s governance of the Akhnoor district.',
+    source: 'Family Collection',
+    notes: 'This photograph is part of the family\'s private collection and represents one of the earliest known images of the fort.',
+  },
+  {
+    id: 'photo-2',
+    category: 'Photographs',
+    title: 'Amar Mahal Palace',
+    date: 'Mid-20th Century',
+    description: 'A photograph of Amar Mahal Palace, which served as the official residence and administrative center of the Sharma family. The palace exemplifies the architectural style and cultural refinement of the era.',
+    source: 'Family Collection',
+    notes: 'Additional photographs and architectural documentation are being compiled for future inclusion.',
+  },
+  {
+    id: 'doc-1',
+    category: 'Documents',
+    title: 'Grant of Diwani - Historical Record',
+    date: 'Mid-19th Century',
+    description: 'Historical documentation related to the grant of Diwani to Lakshmandev Singh Sharma by Maharaja Gulab Singh. This represents one of the most significant moments in the establishment of the Sharma family\'s administrative legacy.',
+    source: 'State Archives (Reference)',
+    notes: 'Detailed transcription and translation of this document are being prepared for scholarly access.',
+  },
+  {
+    id: 'doc-2',
+    category: 'Documents',
+    title: 'Autonomy Grant for Akhnoor',
+    date: 'Late 19th Century',
+    description: 'Documentation pertaining to the grant of autonomy over the Akhnoor district to the Sharma family by Maharaja Ranveer Singh, establishing them as the Rajas of Akhnoor.',
+    source: 'Family Archives',
+    notes: 'This document is being preserved and digitized for long-term conservation and scholarly research.',
+  },
+];

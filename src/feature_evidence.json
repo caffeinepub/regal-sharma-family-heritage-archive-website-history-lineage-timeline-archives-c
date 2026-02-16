@@ -1,0 +1,288 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-create-a-multi-page-website-structure-with-top-level-navigation-and-routes-for-home-founding-era-akhnoor-sovereignty-forts-residences-lineage-family-tree-royal-administration-legacy-post-1947-transition-current-generation-gallery-archives-timeline-and-contact-family-contributions",
+      "featureTitle": "Create a multi-page website structure with top-level navigation and routes for: Home, Founding Era, Akhnoor Sovereignty, Forts & Residences, Lineage & Family Tree, Royal Administration & Legacy, Post-1947 Transition, Current Generation, Gallery & Archives, Timeline, and Contact / Family Contributions.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/layout/SiteLayout.tsx",
+        "frontend/src/components/navigation/TopNav.tsx",
+        "frontend/src/pages/AkhnoorSovereigntyPage.tsx",
+        "frontend/src/pages/ContactContributionsPage.tsx",
+        "frontend/src/pages/CurrentGenerationPage.tsx",
+        "frontend/src/pages/FortsResidencesPage.tsx",
+        "frontend/src/pages/FoundingEraPage.tsx",
+        "frontend/src/pages/GalleryArchivesPage.tsx",
+        "frontend/src/pages/HomePage.tsx",
+        "frontend/src/pages/LineageFamilyTreePage.tsx",
+        "frontend/src/pages/Post1947TransitionPage.tsx",
+        "frontend/src/pages/RoyalAdministrationLegacyPage.tsx",
+        "frontend/src/pages/TimelinePage.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-the-overall-visual-design-to-feel-historically-grounded-and-museum-like-elegant-typography-subtle-parchment-archival-textures-deep-red-and-gold-accents-and-calm-subtle-animations-ensure-the-tone-is-credible-and-scholarly-rather-than-promotional",
+      "featureTitle": "Implement the overall visual design to feel historically grounded and museum-like: elegant typography, subtle parchment/archival textures, deep red and gold accents, and calm, subtle animations; ensure the tone is credible and scholarly rather than promotional.",
+      "files": [
+        "frontend/src/components/layout/SiteLayout.tsx",
+        "frontend/src/index.css",
+        "frontend/tailwind.config.js"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-populate-the-site-with-the-provided-historical-narrative-content-and-structure-including-sections-for-lakshmandev-singh-sharma-s-role-under-maharaja-gulab-singh-the-diwani-grant-the-support-during-maharaja-ranveer-singh-s-rebellion-the-autonomy-over-akhnoor-and-the-post-1947-transition-include-placeholders-for-future-research-and-oral-histories-on-relevant-pages",
+      "featureTitle": "Populate the site with the provided historical narrative content and structure, including sections for Lakshmandev Singh Sharma’s role under Maharaja Gulab Singh, the Diwani grant, the support during Maharaja Ranveer Singh’s rebellion, the autonomy over Akhnoor, and the post-1947 transition; include placeholders for future research and oral histories on relevant pages.",
+      "files": [
+        "frontend/src/content/historyContent.ts",
+        "frontend/src/pages/AkhnoorSovereigntyPage.tsx",
+        "frontend/src/pages/FoundingEraPage.tsx",
+        "frontend/src/pages/Post1947TransitionPage.tsx",
+        "frontend/src/pages/RoyalAdministrationLegacyPage.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-3"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-the-home-page-with-1-a-hero-banner-including-a-dignified-tagline-2-a-brief-introduction-to-the-royal-lineage-and-3-highlighted-history-cards-sections-that-link-to-the-deeper-pages",
+      "featureTitle": "Create the Home page with: (1) a hero banner including a dignified tagline, (2) a brief introduction to the royal lineage, and (3) highlighted history cards/sections that link to the deeper pages.",
+      "files": [
+        "frontend/src/pages/HomePage.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-4"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-an-interactive-expandable-family-tree-visualization-for-the-direct-lineage-lakshmandev-singh-sharma-vidyadhar-sharma-tirlokchandra-sharma-pushkarnath-sharma-mangaldas-sharma-ramdas-sharma-gyanchand-sharma-tilak-raj-sharma-rajkumar-sharma-aarav-sharma-include-biographical-note-placeholders-per-person-and-explicitly-state-that-aarav-sharma-represents-the-present-generation-carrying-forward-the-legacy",
+      "featureTitle": "Implement an interactive, expandable family tree visualization for the direct lineage: Lakshmandev Singh Sharma → Vidyadhar Sharma → Tirlokchandra Sharma → Pushkarnath Sharma → Mangaldas Sharma → Ramdas Sharma → Gyanchand Sharma → Tilak Raj Sharma → Rajkumar Sharma → Aarav Sharma; include biographical note placeholders per person and explicitly state that Aarav Sharma represents the present generation carrying forward the legacy.",
+      "files": [
+        "frontend/src/components/lineage/FamilyTree.tsx",
+        "frontend/src/components/lineage/PersonDetailsPanel.tsx",
+        "frontend/src/content/lineage.ts",
+        "frontend/src/pages/LineageFamilyTreePage.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-5"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-an-interactive-timeline-page-that-displays-chronological-historical-milestones-with-expandable-entries-and-supports-adding-citations-sources-per-milestone-placeholders-allowed",
+      "featureTitle": "Implement an interactive timeline page that displays chronological historical milestones with expandable entries and supports adding citations/sources per milestone (placeholders allowed).",
+      "files": [
+        "frontend/src/components/timeline/TimelineList.tsx",
+        "frontend/src/content/timeline.ts",
+        "frontend/src/pages/TimelinePage.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-6"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-a-gallery-archives-section-with-an-archive-document-viewer-that-supports-browsing-placeholder-items-across-categories-photographs-letters-documents-artifacts-include-a-detail-view-for-an-item-with-metadata-fields-title-date-period-description-source-citation-and-notes",
+      "featureTitle": "Create a Gallery & Archives section with an archive/document viewer that supports browsing placeholder items across categories: Photographs, Letters, Documents, Artifacts; include a detail view for an item with metadata fields (title, date/period, description, source/citation, and notes).",
+      "files": [
+        "frontend/src/components/archive/ArchiveBrowser.tsx",
+        "frontend/src/components/archive/ArchiveItemDetailDialog.tsx",
+        "frontend/src/content/archive.ts",
+        "frontend/src/pages/GalleryArchivesPage.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-7"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-a-current-generation-page-that-profiles-rawal-raja-tilak-raj-singh-sharma-current-head-kunwar-rajkumar-singh-sharma-successor-and-bhanwar-aarav-singh-sharma-next-generation-including-a-section-describing-continuity-of-traditions-placeholders-allowed-where-details-are-not-provided",
+      "featureTitle": "Add a Current Generation page that profiles: Rawal/Raja Tilak Raj Singh Sharma (current head), Kunwar Rajkumar Singh Sharma (successor), and Bhanwar Aarav Singh Sharma (next generation), including a section describing continuity of traditions (placeholders allowed where details are not provided).",
+      "files": [
+        "frontend/src/components/current-generation/ProfileCard.tsx",
+        "frontend/src/pages/CurrentGenerationPage.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-8"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-a-contact-family-contributions-page-with-a-submission-form-for-relatives-and-researchers-name-email-relationship-affiliation-message-optional-attachment-metadata-field-and-consent-checkbox-and-persist-submissions-in-the-motoko-backend-for-later-review",
+      "featureTitle": "Implement a Contact / Family Contributions page with a submission form for relatives and researchers (name, email, relationship/affiliation, message, optional attachment metadata field, and consent checkbox) and persist submissions in the Motoko backend for later review.",
+      "files": [
+        "frontend/src/components/contributions/ContributionsForm.tsx",
+        "frontend/src/components/contributions/SubmissionSuccessPanel.tsx",
+        "frontend/src/hooks/useSubmitContribution.ts",
+        "frontend/src/pages/ContactContributionsPage.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-9"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-a-citations-sources-pattern-across-relevant-pages-history-pages-timeline-entries-archive-items-by-providing-a-consistent-sources-citations-ui-block-that-can-display-a-list-of-references-and-supports-empty-state-placeholders",
+      "featureTitle": "Implement a citations/sources pattern across relevant pages (history pages, timeline entries, archive items) by providing a consistent “Sources / Citations” UI block that can display a list of references and supports empty-state placeholders.",
+      "files": [
+        "frontend/src/components/archive/ArchiveItemDetailDialog.tsx",
+        "frontend/src/components/common/SourcesCitationsBlock.tsx",
+        "frontend/src/components/timeline/TimelineList.tsx",
+        "frontend/src/pages/AkhnoorSovereigntyPage.tsx",
+        "frontend/src/pages/FoundingEraPage.tsx",
+        "frontend/src/pages/Post1947TransitionPage.tsx",
+        "frontend/src/pages/RoyalAdministrationLegacyPage.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-10"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-ensure-mobile-responsiveness-and-accessibility-across-the-site-semantic-headings-keyboard-navigation-sufficient-contrast-focus-states-alt-text-for-images-and-reduced-motion-support",
+      "featureTitle": "Ensure mobile responsiveness and accessibility across the site (semantic headings, keyboard navigation, sufficient contrast, focus states, alt text for images, and reduced-motion support).",
+      "files": [
+        "frontend/src/components/archive/ArchiveBrowser.tsx",
+        "frontend/src/components/archive/ArchiveItemDetailDialog.tsx",
+        "frontend/src/components/contributions/ContributionsForm.tsx",
+        "frontend/src/components/lineage/FamilyTree.tsx",
+        "frontend/src/components/navigation/TopNav.tsx",
+        "frontend/src/components/timeline/TimelineList.tsx",
+        "frontend/src/index.css",
+        "frontend/src/pages/HomePage.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-11"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-seo-essentials-for-a-multi-page-react-app-per-route-document-titles-and-meta-descriptions-where-feasible-meaningful-headings-and-an-indexable-content-structure-no-critical-content-only-in-images",
+      "featureTitle": "Add SEO essentials for a multi-page React app: per-route document titles and meta descriptions (where feasible), meaningful headings, and an indexable content structure (no critical content only in images).",
+      "files": [
+        "frontend/src/hooks/usePageMeta.ts",
+        "frontend/src/pages/AkhnoorSovereigntyPage.tsx",
+        "frontend/src/pages/ContactContributionsPage.tsx",
+        "frontend/src/pages/CurrentGenerationPage.tsx",
+        "frontend/src/pages/FortsResidencesPage.tsx",
+        "frontend/src/pages/FoundingEraPage.tsx",
+        "frontend/src/pages/GalleryArchivesPage.tsx",
+        "frontend/src/pages/HomePage.tsx",
+        "frontend/src/pages/LineageFamilyTreePage.tsx",
+        "frontend/src/pages/Post1947TransitionPage.tsx",
+        "frontend/src/pages/RoyalAdministrationLegacyPage.tsx",
+        "frontend/src/pages/TimelinePage.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-12"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

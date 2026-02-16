@@ -1,0 +1,405 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-16T06:23:26.487Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 12,
+    "implemented": 12,
+    "items": [
+      {
+        "id": "REQ-1",
+        "summary": "Create a multi-page website structure with top-level navigation and routes for: Home, Founding Era, Akhnoor Sovereignty, Forts & Residences, Lineage & Family Tree, Royal Administration & Legacy, Post-1947 Transition, Current Generation, Gallery & Archives, Timeline, and Contact / Family Contributions.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/App.tsx",
+          "frontend/src/components/layout/SiteLayout.tsx",
+          "frontend/src/components/navigation/TopNav.tsx",
+          "frontend/src/pages/HomePage.tsx",
+          "frontend/src/pages/FoundingEraPage.tsx",
+          "frontend/src/pages/AkhnoorSovereigntyPage.tsx",
+          "frontend/src/pages/FortsResidencesPage.tsx",
+          "frontend/src/pages/LineageFamilyTreePage.tsx",
+          "frontend/src/pages/RoyalAdministrationLegacyPage.tsx",
+          "frontend/src/pages/Post1947TransitionPage.tsx",
+          "frontend/src/pages/CurrentGenerationPage.tsx",
+          "frontend/src/pages/GalleryArchivesPage.tsx",
+          "frontend/src/pages/TimelinePage.tsx",
+          "frontend/src/pages/ContactContributionsPage.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/App.tsx",
+          "frontend/src/components/layout/SiteLayout.tsx",
+          "frontend/src/components/navigation/TopNav.tsx",
+          "frontend/src/pages/HomePage.tsx",
+          "frontend/src/pages/FoundingEraPage.tsx",
+          "frontend/src/pages/AkhnoorSovereigntyPage.tsx",
+          "frontend/src/pages/FortsResidencesPage.tsx",
+          "frontend/src/pages/LineageFamilyTreePage.tsx",
+          "frontend/src/pages/RoyalAdministrationLegacyPage.tsx",
+          "frontend/src/pages/Post1947TransitionPage.tsx",
+          "frontend/src/pages/CurrentGenerationPage.tsx",
+          "frontend/src/pages/GalleryArchivesPage.tsx",
+          "frontend/src/pages/TimelinePage.tsx",
+          "frontend/src/pages/ContactContributionsPage.tsx"
+        ]
+      },
+      {
+        "id": "REQ-10",
+        "summary": "Implement a citations/sources pattern across relevant pages (history pages, timeline entries, archive items) by providing a consistent “Sources / Citations” UI block that can display a list of references and supports empty-state placeholders.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/common/SourcesCitationsBlock.tsx",
+          "frontend/src/pages/FoundingEraPage.tsx",
+          "frontend/src/pages/AkhnoorSovereigntyPage.tsx",
+          "frontend/src/pages/RoyalAdministrationLegacyPage.tsx",
+          "frontend/src/pages/Post1947TransitionPage.tsx",
+          "frontend/src/components/timeline/TimelineList.tsx",
+          "frontend/src/components/archive/ArchiveItemDetailDialog.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/common/SourcesCitationsBlock.tsx",
+          "frontend/src/pages/FoundingEraPage.tsx",
+          "frontend/src/pages/AkhnoorSovereigntyPage.tsx",
+          "frontend/src/pages/RoyalAdministrationLegacyPage.tsx",
+          "frontend/src/pages/Post1947TransitionPage.tsx",
+          "frontend/src/components/timeline/TimelineList.tsx",
+          "frontend/src/components/archive/ArchiveItemDetailDialog.tsx"
+        ]
+      },
+      {
+        "id": "REQ-11",
+        "summary": "Ensure mobile responsiveness and accessibility across the site (semantic headings, keyboard navigation, sufficient contrast, focus states, alt text for images, and reduced-motion support).",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/index.css",
+          "frontend/src/components/navigation/TopNav.tsx",
+          "frontend/src/components/lineage/FamilyTree.tsx",
+          "frontend/src/components/timeline/TimelineList.tsx",
+          "frontend/src/components/archive/ArchiveBrowser.tsx",
+          "frontend/src/components/archive/ArchiveItemDetailDialog.tsx",
+          "frontend/src/components/contributions/ContributionsForm.tsx",
+          "frontend/src/pages/HomePage.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/index.css",
+          "frontend/src/components/navigation/TopNav.tsx",
+          "frontend/src/components/lineage/FamilyTree.tsx",
+          "frontend/src/components/timeline/TimelineList.tsx",
+          "frontend/src/components/archive/ArchiveBrowser.tsx",
+          "frontend/src/components/archive/ArchiveItemDetailDialog.tsx",
+          "frontend/src/components/contributions/ContributionsForm.tsx",
+          "frontend/src/pages/HomePage.tsx"
+        ]
+      },
+      {
+        "id": "REQ-12",
+        "summary": "Add SEO essentials for a multi-page React app: per-route document titles and meta descriptions (where feasible), meaningful headings, and an indexable content structure (no critical content only in images).",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/hooks/usePageMeta.ts",
+          "frontend/src/pages/HomePage.tsx",
+          "frontend/src/pages/FoundingEraPage.tsx",
+          "frontend/src/pages/AkhnoorSovereigntyPage.tsx",
+          "frontend/src/pages/FortsResidencesPage.tsx",
+          "frontend/src/pages/LineageFamilyTreePage.tsx",
+          "frontend/src/pages/RoyalAdministrationLegacyPage.tsx",
+          "frontend/src/pages/Post1947TransitionPage.tsx",
+          "frontend/src/pages/CurrentGenerationPage.tsx",
+          "frontend/src/pages/GalleryArchivesPage.tsx",
+          "frontend/src/pages/TimelinePage.tsx",
+          "frontend/src/pages/ContactContributionsPage.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/hooks/usePageMeta.ts",
+          "frontend/src/pages/HomePage.tsx",
+          "frontend/src/pages/FoundingEraPage.tsx",
+          "frontend/src/pages/AkhnoorSovereigntyPage.tsx",
+          "frontend/src/pages/FortsResidencesPage.tsx",
+          "frontend/src/pages/LineageFamilyTreePage.tsx",
+          "frontend/src/pages/RoyalAdministrationLegacyPage.tsx",
+          "frontend/src/pages/Post1947TransitionPage.tsx",
+          "frontend/src/pages/CurrentGenerationPage.tsx",
+          "frontend/src/pages/GalleryArchivesPage.tsx",
+          "frontend/src/pages/TimelinePage.tsx",
+          "frontend/src/pages/ContactContributionsPage.tsx"
+        ]
+      },
+      {
+        "id": "REQ-2",
+        "summary": "Implement the overall visual design to feel historically grounded and museum-like: elegant typography, subtle parchment/archival textures, deep red and gold accents, and calm, subtle animations; ensure the tone is credible and scholarly rather than promotional.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/index.css",
+          "frontend/tailwind.config.js",
+          "frontend/src/components/layout/SiteLayout.tsx",
+          "frontend/public/assets/generated/parchment-texture.dim_2048x2048.png",
+          "frontend/public/assets/generated/ornamental-divider.dim_2400x300.png",
+          "frontend/public/assets/generated/sharma-crest-emblem.dim_512x512.png",
+          "frontend/public/assets/generated/akhnoor-fort-etching.dim_1800x900.png",
+          "frontend/public/assets/generated/archival-seal.dim_512x512.png"
+        ],
+        "matchedFiles": [
+          "frontend/src/index.css",
+          "frontend/tailwind.config.js",
+          "frontend/src/components/layout/SiteLayout.tsx",
+          "frontend/public/assets/generated/parchment-texture.dim_2048x2048.png",
+          "frontend/public/assets/generated/ornamental-divider.dim_2400x300.png",
+          "frontend/public/assets/generated/sharma-crest-emblem.dim_512x512.png",
+          "frontend/public/assets/generated/akhnoor-fort-etching.dim_1800x900.png",
+          "frontend/public/assets/generated/archival-seal.dim_512x512.png"
+        ]
+      },
+      {
+        "id": "REQ-3",
+        "summary": "Populate the site with the provided historical narrative content and structure, including sections for Lakshmandev Singh Sharma’s role under Maharaja Gulab Singh, the Diwani grant, the support during Maharaja Ranveer Singh’s rebellion, the autonomy over Akhnoor, and the post-1947 transition; include placeholders for future research and oral histories on relevant pages.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/content/historyContent.ts",
+          "frontend/src/pages/FoundingEraPage.tsx",
+          "frontend/src/pages/RoyalAdministrationLegacyPage.tsx",
+          "frontend/src/pages/AkhnoorSovereigntyPage.tsx",
+          "frontend/src/pages/Post1947TransitionPage.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/content/historyContent.ts",
+          "frontend/src/pages/FoundingEraPage.tsx",
+          "frontend/src/pages/RoyalAdministrationLegacyPage.tsx",
+          "frontend/src/pages/AkhnoorSovereigntyPage.tsx",
+          "frontend/src/pages/Post1947TransitionPage.tsx"
+        ]
+      },
+      {
+        "id": "REQ-4",
+        "summary": "Create the Home page with: (1) a hero banner including a dignified tagline, (2) a brief introduction to the royal lineage, and (3) highlighted history cards/sections that link to the deeper pages.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/pages/HomePage.tsx",
+          "frontend/src/components/home/HighlightsGrid.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/pages/HomePage.tsx"
+        ]
+      },
+      {
+        "id": "REQ-5",
+        "summary": "Implement an interactive, expandable family tree visualization for the direct lineage: Lakshmandev Singh Sharma → Vidyadhar Sharma → Tirlokchandra Sharma → Pushkarnath Sharma → Mangaldas Sharma → Ramdas Sharma → Gyanchand Sharma → Tilak Raj Sharma → Rajkumar Sharma → Aarav Sharma; include biographical note placeholders per person and explicitly state that Aarav Sharma represents the present generation carrying forward the legacy.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/content/lineage.ts",
+          "frontend/src/components/lineage/FamilyTree.tsx",
+          "frontend/src/components/lineage/PersonDetailsPanel.tsx",
+          "frontend/src/pages/LineageFamilyTreePage.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/content/lineage.ts",
+          "frontend/src/components/lineage/FamilyTree.tsx",
+          "frontend/src/components/lineage/PersonDetailsPanel.tsx",
+          "frontend/src/pages/LineageFamilyTreePage.tsx"
+        ]
+      },
+      {
+        "id": "REQ-6",
+        "summary": "Implement an interactive timeline page that displays chronological historical milestones with expandable entries and supports adding citations/sources per milestone (placeholders allowed).",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/content/timeline.ts",
+          "frontend/src/components/timeline/TimelineList.tsx",
+          "frontend/src/pages/TimelinePage.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/content/timeline.ts",
+          "frontend/src/components/timeline/TimelineList.tsx",
+          "frontend/src/pages/TimelinePage.tsx"
+        ]
+      },
+      {
+        "id": "REQ-7",
+        "summary": "Create a Gallery & Archives section with an archive/document viewer that supports browsing placeholder items across categories: Photographs, Letters, Documents, Artifacts; include a detail view for an item with metadata fields (title, date/period, description, source/citation, and notes).",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/content/archive.ts",
+          "frontend/src/components/archive/ArchiveBrowser.tsx",
+          "frontend/src/components/archive/ArchiveItemDetailDialog.tsx",
+          "frontend/src/pages/GalleryArchivesPage.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/content/archive.ts",
+          "frontend/src/components/archive/ArchiveBrowser.tsx",
+          "frontend/src/components/archive/ArchiveItemDetailDialog.tsx",
+          "frontend/src/pages/GalleryArchivesPage.tsx"
+        ]
+      },
+      {
+        "id": "REQ-8",
+        "summary": "Add a Current Generation page that profiles: Rawal/Raja Tilak Raj Singh Sharma (current head), Kunwar Rajkumar Singh Sharma (successor), and Bhanwar Aarav Singh Sharma (next generation), including a section describing continuity of traditions (placeholders allowed where details are not provided).",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/pages/CurrentGenerationPage.tsx",
+          "frontend/src/components/current-generation/ProfileCard.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/pages/CurrentGenerationPage.tsx",
+          "frontend/src/components/current-generation/ProfileCard.tsx"
+        ]
+      },
+      {
+        "id": "REQ-9",
+        "summary": "Implement a Contact / Family Contributions page with a submission form for relatives and researchers (name, email, relationship/affiliation, message, optional attachment metadata field, and consent checkbox) and persist submissions in the Motoko backend for later review.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/contributions/ContributionsForm.tsx",
+          "frontend/src/hooks/useSubmitContribution.ts",
+          "frontend/src/pages/ContactContributionsPage.tsx",
+          "frontend/src/components/contributions/SubmissionSuccessPanel.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/contributions/ContributionsForm.tsx",
+          "frontend/src/hooks/useSubmitContribution.ts",
+          "frontend/src/pages/ContactContributionsPage.tsx",
+          "frontend/src/components/contributions/SubmissionSuccessPanel.tsx"
+        ]
+      }
+    ]
+  },
+  "changedFiles": [
+    "backend/authorization/MixinAuthorization.mo",
+    "backend/authorization/access-control.mo",
+    "backend/main.mo",
+    "build-request.json",
+    "build-template/Dockerfile",
+    "build-template/LICENSE",
+    "build-template/README.md",
+    "build-template/deploy.sh",
+    "build-template/icp.yaml",
+    "build-template/package.json",
+    "build-template/pnpm-lock.yaml",
+    "build-template/pnpm-workspace.yaml",
+    "build-template/scripts/prune-unused-images.js",
+    "build-template/scripts/resize-images.js",
+    "build-template/src/backend/canister.yaml",
+    "build-template/src/backend/system-idl/aaaaa-aa.did",
+    "build-template/src/frontend/canister.yaml",
+    "build-template/src/frontend/components.json",
+    "build-template/src/frontend/env.json",
+    "build-template/src/frontend/eslint-rules/no-bigint-in-query-keys.js",
+    "build-template/src/frontend/eslint-rules/require-internet-identity-provider.js",
+    "build-template/src/frontend/eslint.config.js",
+    "build-template/src/frontend/package.json",
+    "build-template/src/frontend/postcss.config.js",
+    "build-template/src/frontend/src/components/ui/accordion.tsx",
+    "build-template/src/frontend/src/components/ui/alert-dialog.tsx",
+    "build-template/src/frontend/src/components/ui/alert.tsx",
+    "build-template/src/frontend/src/components/ui/aspect-ratio.tsx",
+    "build-template/src/frontend/src/components/ui/avatar.tsx",
+    "build-template/src/frontend/src/components/ui/badge.tsx",
+    "build-template/src/frontend/src/components/ui/breadcrumb.tsx",
+    "build-template/src/frontend/src/components/ui/button.tsx",
+    "build-template/src/frontend/src/components/ui/calendar.tsx",
+    "build-template/src/frontend/src/components/ui/card.tsx",
+    "build-template/src/frontend/src/components/ui/carousel.tsx",
+    "build-template/src/frontend/src/components/ui/chart.tsx",
+    "build-template/src/frontend/src/components/ui/checkbox.tsx",
+    "build-template/src/frontend/src/components/ui/collapsible.tsx",
+    "build-template/src/frontend/src/components/ui/command.tsx",
+    "build-template/src/frontend/src/components/ui/context-menu.tsx",
+    "build-template/src/frontend/src/components/ui/dialog.tsx",
+    "build-template/src/frontend/src/components/ui/drawer.tsx",
+    "build-template/src/frontend/src/components/ui/dropdown-menu.tsx",
+    "build-template/src/frontend/src/components/ui/form.tsx",
+    "build-template/src/frontend/src/components/ui/hover-card.tsx",
+    "build-template/src/frontend/src/components/ui/input-otp.tsx",
+    "build-template/src/frontend/src/components/ui/input.tsx",
+    "build-template/src/frontend/src/components/ui/label.tsx",
+    "build-template/src/frontend/src/components/ui/menubar.tsx",
+    "build-template/src/frontend/src/components/ui/navigation-menu.tsx",
+    "build-template/src/frontend/src/components/ui/pagination.tsx",
+    "build-template/src/frontend/src/components/ui/popover.tsx",
+    "build-template/src/frontend/src/components/ui/progress.tsx",
+    "build-template/src/frontend/src/components/ui/radio-group.tsx",
+    "build-template/src/frontend/src/components/ui/resizable.tsx",
+    "build-template/src/frontend/src/components/ui/scroll-area.tsx",
+    "build-template/src/frontend/src/components/ui/select.tsx",
+    "build-template/src/frontend/src/components/ui/separator.tsx",
+    "build-template/src/frontend/src/components/ui/sheet.tsx",
+    "build-template/src/frontend/src/components/ui/sidebar.tsx",
+    "build-template/src/frontend/src/components/ui/skeleton.tsx",
+    "build-template/src/frontend/src/components/ui/slider.tsx",
+    "build-template/src/frontend/src/components/ui/sonner.tsx",
+    "build-template/src/frontend/src/components/ui/switch.tsx",
+    "build-template/src/frontend/src/components/ui/table.tsx",
+    "build-template/src/frontend/src/components/ui/tabs.tsx",
+    "build-template/src/frontend/src/components/ui/textarea.tsx",
+    "build-template/src/frontend/src/components/ui/toggle-group.tsx",
+    "build-template/src/frontend/src/components/ui/toggle.tsx",
+    "build-template/src/frontend/src/components/ui/tooltip.tsx",
+    "build-template/src/frontend/src/hooks/use-mobile.tsx",
+    "build-template/src/frontend/src/lib/utils.ts",
+    "build-template/src/frontend/tsconfig.json",
+    "build-template/src/frontend/vite.config.js",
+    "build-template/tsconfig.json",
+    "caffeine.lock.json",
+    "feature_evidence.json",
+    "frontend-file-summaries.txt",
+    "frontend-implementation-plan.json",
+    "frontend/index.css",
+    "frontend/index.html",
+    "frontend/public/assets/generated/akhnoor-fort-etching.dim_1800x900.png",
+    "frontend/public/assets/generated/archival-seal.dim_512x512.png",
+    "frontend/public/assets/generated/ornamental-divider.dim_2400x300.png",
+    "frontend/public/assets/generated/parchment-texture.dim_2048x2048.png",
+    "frontend/public/assets/generated/sharma-crest-emblem.dim_512x512.png",
+    "frontend/src/App.tsx",
+    "frontend/src/backend.d.ts",
+    "frontend/src/backend.ts",
+    "frontend/src/components/archive/ArchiveBrowser.tsx",
+    "frontend/src/components/archive/ArchiveItemDetailDialog.tsx",
+    "frontend/src/components/common/SourcesCitationsBlock.tsx",
+    "frontend/src/components/contributions/ContributionsForm.tsx",
+    "frontend/src/components/contributions/SubmissionSuccessPanel.tsx",
+    "frontend/src/components/current-generation/ProfileCard.tsx",
+    "frontend/src/components/layout/Footer.tsx",
+    "frontend/src/components/layout/SiteLayout.tsx",
+    "frontend/src/components/lineage/FamilyTree.tsx",
+    "frontend/src/components/lineage/PersonDetailsPanel.tsx",
+    "frontend/src/components/navigation/TopNav.tsx",
+    "frontend/src/components/timeline/TimelineList.tsx",
+    "frontend/src/config.ts",
+    "frontend/src/content/archive.ts",
+    "frontend/src/content/currentGeneration.ts",
+    "frontend/src/content/historyContent.ts",
+    "frontend/src/content/lineage.ts",
+    "frontend/src/content/timeline.ts",
+    "frontend/src/declarations/backend.did.d.ts",
+    "frontend/src/declarations/backend.did.js",
+    "frontend/src/hooks/useActor.ts",
+    "frontend/src/hooks/useInternetIdentity.ts",
+    "frontend/src/hooks/usePageMeta.ts",
+    "frontend/src/hooks/useQueries.ts",
+    "frontend/src/hooks/useSubmitContribution.ts",
+    "frontend/src/index.css",
+    "frontend/src/main.tsx",
+    "frontend/src/pages/AkhnoorSovereigntyPage.tsx",
+    "frontend/src/pages/ContactContributionsPage.tsx",
+    "frontend/src/pages/CurrentGenerationPage.tsx",
+    "frontend/src/pages/FortsResidencesPage.tsx",
+    "frontend/src/pages/FoundingEraPage.tsx",
+    "frontend/src/pages/GalleryArchivesPage.tsx",
+    "frontend/src/pages/HomePage.tsx",
+    "frontend/src/pages/LineageFamilyTreePage.tsx",
+    "frontend/src/pages/Post1947TransitionPage.tsx",
+    "frontend/src/pages/RoyalAdministrationLegacyPage.tsx",
+    "frontend/src/pages/TimelinePage.tsx",
+    "frontend/src/ui-summary.json",
+    "frontend/src/utils/StorageClient.ts",
+    "frontend/src/utils/urlParams.ts",
+    "frontend/tailwind.config.js",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}

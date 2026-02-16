@@ -1,0 +1,252 @@
+{
+  "kind": "build_request",
+  "title": "Regal Sharma Family Heritage Archive Website (History, Lineage, Timeline, Archives, Contributions)",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Create a multi-page website structure with top-level navigation and routes for: Home, Founding Era, Akhnoor Sovereignty, Forts & Residences, Lineage & Family Tree, Royal Administration & Legacy, Post-1947 Transition, Current Generation, Gallery & Archives, Timeline, and Contact / Family Contributions.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Website Structure\nHome\nFounding Era\nAkhnoor Sovereignty\nForts & Residences\nLineage & Family Tree\nRoyal Administration & Legacy\nPost-1947 Transition\nCurrent Generation\nGallery & Archives\nTimeline\nContact / Family Contributions"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Navigation is present on desktop and collapses appropriately on mobile.",
+        "Each route renders a dedicated page with consistent layout (header/nav/footer) and page title.",
+        "All pages are reachable without dead links and do not require authentication."
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Implement the overall visual design to feel historically grounded and museum-like: elegant typography, subtle parchment/archival textures, deep red and gold accents, and calm, subtle animations; ensure the tone is credible and scholarly rather than promotional.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "The design should evoke royal heritage: elegant typography, subtle parchment or archival textures, deep red and gold accents, and a dignified, museum-like aesthetic. It should feel credible, scholarly, and respectful rather than promotional.",
+          "Calm, subtle animations"
+        ]
+      },
+      "acceptanceCriteria": [
+        "A consistent design system (colors/typography/spacing) is applied across all pages.",
+        "Animations are subtle (e.g., fade/slide on section entry) and respect reduced-motion preferences.",
+        "The UI avoids overly modern/flashy elements and reads as an archive/chronicle."
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "text": "Populate the site with the provided historical narrative content and structure, including sections for Lakshmandev Singh Sharma’s role under Maharaja Gulab Singh, the Diwani grant, the support during Maharaja Ranveer Singh’s rebellion, the autonomy over Akhnoor, and the post-1947 transition; include placeholders for future research and oral histories on relevant pages.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Historical Background to Present\nThe first head of the Akhnoor Royal Family was Lakshmandev Singh Sharma...",
+          "Technical Notes\nInclude placeholders for future research and oral histories"
+        ]
+      },
+      "acceptanceCriteria": [
+        "All key historical points provided by the user are present in appropriate sections/pages.",
+        "Pages include clearly labeled placeholder blocks for future citations, sources, and oral histories without breaking layout.",
+        "User-facing text is formal and historically careful (no sensational language)."
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "text": "Create the Home page with: (1) a hero banner including a dignified tagline, (2) a brief introduction to the royal lineage, and (3) highlighted history cards/sections that link to the deeper pages.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Home\nHero banner with a dignified tagline\nBrief introduction to the royal lineage\nHighlights of history"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Hero section includes a tagline and short introductory paragraph.",
+        "At least 3–6 highlight items link to relevant pages (e.g., Founding Era, Sovereignty, Lineage, Timeline, Archives).",
+        "Home page remains readable and well-spaced on mobile screens."
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "text": "Implement an interactive, expandable family tree visualization for the direct lineage: Lakshmandev Singh Sharma → Vidyadhar Sharma → Tirlokchandra Sharma → Pushkarnath Sharma → Mangaldas Sharma → Ramdas Sharma → Gyanchand Sharma → Tilak Raj Sharma → Rajkumar Sharma → Aarav Sharma; include biographical note placeholders per person and explicitly state that Aarav Sharma represents the present generation carrying forward the legacy.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Lineage & Family Tree\nInteractive genealogy chart\nBiographical notes",
+          "Genealogical Lineage (Direct Line)\nLakshmandev Singh Sharma → Vidyadhar Sharma → ... → Aarav Sharma\nClarify that Aarav Sharma represents the present generation carrying forward the legacy."
+        ]
+      },
+      "acceptanceCriteria": [
+        "Family tree supports expanding/collapsing or focusing nodes (works on both desktop and mobile).",
+        "Selecting a person shows biographical notes (placeholder text allowed where details are not provided).",
+        "A visible note clarifies Aarav Sharma as the present generation."
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "text": "Implement an interactive timeline page that displays chronological historical milestones with expandable entries and supports adding citations/sources per milestone (placeholders allowed).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Interactive timeline",
+          "Timeline\nChronological historical milestones",
+          "Space for citations and sources"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Timeline renders a chronological list with expand/collapse or detail view per entry.",
+        "Timeline entries include a dedicated area for citations/sources (can be empty placeholders initially).",
+        "Timeline is keyboard-navigable and readable on mobile."
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "text": "Create a Gallery & Archives section with an archive/document viewer that supports browsing placeholder items across categories: Photographs, Letters, Documents, Artifacts; include a detail view for an item with metadata fields (title, date/period, description, source/citation, and notes).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Gallery & Archives\nPhotographs\nLetters\nDocuments\nArtifacts",
+          "Archive/document viewer"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Archive supports filtering or tabbing by the 4 categories.",
+        "Clicking an item opens a detail view (modal or page) showing metadata fields.",
+        "Initial content may be placeholders but the viewer UI is functional."
+      ]
+    },
+    {
+      "id": "REQ-8",
+      "text": "Add a Current Generation page that profiles: Rawal/Raja Tilak Raj Singh Sharma (current head), Kunwar Rajkumar Singh Sharma (successor), and Bhanwar Aarav Singh Sharma (next generation), including a section describing continuity of traditions (placeholders allowed where details are not provided).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Present Line of the Akhnoor Royal Family\nCurrent head: Rawal/Raja Tilak Raj Singh Sharma\nSuccessor: Kunwar Rajkumar Singh Sharma\nNext generation: Bhanwar Aarav Singh Sharma",
+          "Current Generation\nProfiles of Tilak Raj, Rajkumar, and Aarav\nContinuity of traditions"
+        ]
+      },
+      "acceptanceCriteria": [
+        "All three profiles are displayed with consistent styling and clear titles/roles.",
+        "Page includes a dedicated section about continuity of traditions with placeholder text clearly labeled as such.",
+        "Names and honorifics match the user-provided spelling/casing."
+      ]
+    },
+    {
+      "id": "REQ-9",
+      "text": "Implement a Contact / Family Contributions page with a submission form for relatives and researchers (name, email, relationship/affiliation, message, optional attachment metadata field, and consent checkbox) and persist submissions in the Motoko backend for later review.",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Contact / Family Contributions\nSubmission form for relatives and researchers"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Form validates required fields and consent before submission.",
+        "On successful submit, the submission is stored via backend API and the UI shows a success confirmation.",
+        "Backend exposes a method to list submissions (for future admin use) without requiring third-party services."
+      ]
+    },
+    {
+      "id": "REQ-10",
+      "text": "Implement a citations/sources pattern across relevant pages (history pages, timeline entries, archive items) by providing a consistent “Sources / Citations” UI block that can display a list of references and supports empty-state placeholders.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Space for citations and sources"
+        ]
+      },
+      "acceptanceCriteria": [
+        "At least the History pages, Timeline, and Archive item detail views include a “Sources / Citations” block.",
+        "When no sources are present, an accessible placeholder message is shown.",
+        "Sources are rendered as plain text and/or links with safe external-link behavior."
+      ]
+    },
+    {
+      "id": "REQ-11",
+      "text": "Ensure mobile responsiveness and accessibility across the site (semantic headings, keyboard navigation, sufficient contrast, focus states, alt text for images, and reduced-motion support).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Mobile responsiveness",
+          "Ensure accessibility standards"
+        ]
+      },
+      "acceptanceCriteria": [
+        "All pages are usable on common mobile widths without horizontal scrolling.",
+        "Interactive components (nav, timeline, tree, gallery viewer, form) are keyboard-operable with visible focus.",
+        "Reduced-motion preference is respected and images include meaningful alt text (placeholders allowed)."
+      ]
+    },
+    {
+      "id": "REQ-12",
+      "text": "Add SEO essentials for a multi-page React app: per-route document titles and meta descriptions (where feasible), meaningful headings, and an indexable content structure (no critical content only in images).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "SEO optimization"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Each route sets an appropriate document title.",
+        "Each page has a single H1 and a logical heading hierarchy beneath it.",
+        "Primary historical and lineage content is rendered as text in the DOM (not embedded solely in images)."
+      ]
+    }
+  ],
+  "constraints": [
+    "Backend must remain a single Motoko actor (no additional backend services).",
+    "Do not edit files under frontend/src/components/ui or any other immutable paths listed in SYSTEM_CONTEXT; compose them instead.",
+    "No third-party authentication providers (only Internet Identity is supported, but authentication is not required for this request).",
+    "Do not integrate external databases or external CMS services; store any persisted data on-canister."
+  ],
+  "nonGoals": [
+    "Implementing a full CMS admin dashboard/editor UI for managing historical content.",
+    "Uploading and storing binary files for archives in the first iteration (allow metadata placeholders and future expansion).",
+    "Real-time collaboration, chat, push notifications, or social-media API integrations."
+  ],
+  "imageRequirements": {
+    "required": [
+      "Subtle parchment paper texture background (parchment-texture.dim_2048x2048.png)",
+      "Regal ornamental divider motif (ornamental-divider.dim_2400x300.png)",
+      "Minimal heraldic crest-style emblem with abstract elements (sharma-crest-emblem.dim_512x512.png)",
+      "Akhnoor fort silhouette illustration, monochrome etched style (akhnoor-fort-etching.dim_1800x900.png)",
+      "Vintage archival stamp/seal mark, deep red wax look (archival-seal.dim_512x512.png)"
+    ],
+    "edits": []
+  }
+}

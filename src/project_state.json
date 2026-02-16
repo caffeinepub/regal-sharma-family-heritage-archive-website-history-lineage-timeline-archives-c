@@ -1,0 +1,167 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 3,
+  "summary": "Build a refined, historically grounded, museum-like digital archive website documenting the heritage, lineage, and legacy of the Sharma family (erstwhile rulers/Rajas of Akhnoor, J&K), featuring scholarly tone, regal visual design, and sections for history, forts/residences, genealogy, timeline, archives, and community contributions.",
+  "architectural_notes": [
+    "Use a scalable CMS or static site framework suitable for a content-heavy historical archive.",
+    "Design and content should maintain a credible, scholarly, respectful tone (avoid sensational/promotional language).",
+    "Include dedicated space/metadata for citations and sources throughout relevant pages.",
+    "Plan content model to support future expansion (research updates, oral histories, additional archives).",
+    "Meet accessibility requirements (e.g., semantic structure, contrast, keyboard navigation)."
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "imageRequirements": "## Required Images\n- Subtle parchment paper texture background (parchment-texture.dim_2048x2048.png)\n- Regal ornamental divider motif (ornamental-divider.dim_2400x300.png)\n- Minimal heraldic crest-style emblem with abstract elements (sharma-crest-emblem.dim_512x512.png)\n- Akhnoor fort silhouette illustration, monochrome etched style (akhnoor-fort-etching.dim_1800x900.png)\n- Vintage archival stamp/seal mark, deep red wax look (archival-seal.dim_512x512.png)",
+  "existing_features": [
+    {
+      "id": "feature-create-a-multi-page-website-structure-with-top-level-navigation-and-routes-for-home-founding-era-akhnoor-sovereignty-forts-residences-lineage-family-tree-royal-administration-legacy-post-1947-transition-current-generation-gallery-archives-timeline-and-contact-family-contributions",
+      "title": "Create a multi-page website structure with top-level navigation and routes for: Home, Founding Era, Akhnoor Sovereignty, Forts & Residences, Lineage & Family Tree, Royal Administration & Legacy, Post-1947 Transition, Current Generation, Gallery & Archives, Timeline, and Contact / Family Contributions.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-the-overall-visual-design-to-feel-historically-grounded-and-museum-like-elegant-typography-subtle-parchment-archival-textures-deep-red-and-gold-accents-and-calm-subtle-animations-ensure-the-tone-is-credible-and-scholarly-rather-than-promotional",
+      "title": "Implement the overall visual design to feel historically grounded and museum-like: elegant typography, subtle parchment/archival textures, deep red and gold accents, and calm, subtle animations; ensure the tone is credible and scholarly rather than promotional.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-populate-the-site-with-the-provided-historical-narrative-content-and-structure-including-sections-for-lakshmandev-singh-sharma-s-role-under-maharaja-gulab-singh-the-diwani-grant-the-support-during-maharaja-ranveer-singh-s-rebellion-the-autonomy-over-akhnoor-and-the-post-1947-transition-include-placeholders-for-future-research-and-oral-histories-on-relevant-pages",
+      "title": "Populate the site with the provided historical narrative content and structure, including sections for Lakshmandev Singh Sharma’s role under Maharaja Gulab Singh, the Diwani grant, the support during Maharaja Ranveer Singh’s rebellion, the autonomy over Akhnoor, and the post-1947 transition; include placeholders for future research and oral histories on relevant pages.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-the-home-page-with-1-a-hero-banner-including-a-dignified-tagline-2-a-brief-introduction-to-the-royal-lineage-and-3-highlighted-history-cards-sections-that-link-to-the-deeper-pages",
+      "title": "Create the Home page with: (1) a hero banner including a dignified tagline, (2) a brief introduction to the royal lineage, and (3) highlighted history cards/sections that link to the deeper pages.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-an-interactive-expandable-family-tree-visualization-for-the-direct-lineage-lakshmandev-singh-sharma-vidyadhar-sharma-tirlokchandra-sharma-pushkarnath-sharma-mangaldas-sharma-ramdas-sharma-gyanchand-sharma-tilak-raj-sharma-rajkumar-sharma-aarav-sharma-include-biographical-note-placeholders-per-person-and-explicitly-state-that-aarav-sharma-represents-the-present-generation-carrying-forward-the-legacy",
+      "title": "Implement an interactive, expandable family tree visualization for the direct lineage: Lakshmandev Singh Sharma → Vidyadhar Sharma → Tirlokchandra Sharma → Pushkarnath Sharma → Mangaldas Sharma → Ramdas Sharma → Gyanchand Sharma → Tilak Raj Sharma → Rajkumar Sharma → Aarav Sharma; include biographical note placeholders per person and explicitly state that Aarav Sharma represents the present generation carrying forward the legacy.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-an-interactive-timeline-page-that-displays-chronological-historical-milestones-with-expandable-entries-and-supports-adding-citations-sources-per-milestone-placeholders-allowed",
+      "title": "Implement an interactive timeline page that displays chronological historical milestones with expandable entries and supports adding citations/sources per milestone (placeholders allowed).",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-gallery-archives-section-with-an-archive-document-viewer-that-supports-browsing-placeholder-items-across-categories-photographs-letters-documents-artifacts-include-a-detail-view-for-an-item-with-metadata-fields-title-date-period-description-source-citation-and-notes",
+      "title": "Create a Gallery & Archives section with an archive/document viewer that supports browsing placeholder items across categories: Photographs, Letters, Documents, Artifacts; include a detail view for an item with metadata fields (title, date/period, description, source/citation, and notes).",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-current-generation-page-that-profiles-rawal-raja-tilak-raj-singh-sharma-current-head-kunwar-rajkumar-singh-sharma-successor-and-bhanwar-aarav-singh-sharma-next-generation-including-a-section-describing-continuity-of-traditions-placeholders-allowed-where-details-are-not-provided",
+      "title": "Add a Current Generation page that profiles: Rawal/Raja Tilak Raj Singh Sharma (current head), Kunwar Rajkumar Singh Sharma (successor), and Bhanwar Aarav Singh Sharma (next generation), including a section describing continuity of traditions (placeholders allowed where details are not provided).",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-contact-family-contributions-page-with-a-submission-form-for-relatives-and-researchers-name-email-relationship-affiliation-message-optional-attachment-metadata-field-and-consent-checkbox-and-persist-submissions-in-the-motoko-backend-for-later-review",
+      "title": "Implement a Contact / Family Contributions page with a submission form for relatives and researchers (name, email, relationship/affiliation, message, optional attachment metadata field, and consent checkbox) and persist submissions in the Motoko backend for later review.",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-citations-sources-pattern-across-relevant-pages-history-pages-timeline-entries-archive-items-by-providing-a-consistent-sources-citations-ui-block-that-can-display-a-list-of-references-and-supports-empty-state-placeholders",
+      "title": "Implement a citations/sources pattern across relevant pages (history pages, timeline entries, archive items) by providing a consistent “Sources / Citations” UI block that can display a list of references and supports empty-state placeholders.",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-ensure-mobile-responsiveness-and-accessibility-across-the-site-semantic-headings-keyboard-navigation-sufficient-contrast-focus-states-alt-text-for-images-and-reduced-motion-support",
+      "title": "Ensure mobile responsiveness and accessibility across the site (semantic headings, keyboard navigation, sufficient contrast, focus states, alt text for images, and reduced-motion support).",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-seo-essentials-for-a-multi-page-react-app-per-route-document-titles-and-meta-descriptions-where-feasible-meaningful-headings-and-an-indexable-content-structure-no-critical-content-only-in-images",
+      "title": "Add SEO essentials for a multi-page React app: per-route document titles and meta descriptions (where feasible), meaningful headings, and an indexable content structure (no critical content only in images).",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Create multi-page site structure: Home, Founding Era, Akhnoor Sovereignty, Forts & Residences, Lineage & Family Tree, Royal Administration & Legacy, Post-1947 Transition, Current Generation, Gallery & Archives, Timeline, Contact/Contributions",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Implement interactive timeline of key historical milestones",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Implement expandable/interactive family tree visualization for the Sharma lineage with biographical notes",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Add archive/document viewer for photos, letters, documents, artifacts (with placeholders for future items)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Apply regal, scholarly visual design (elegant typography, parchment/archival textures, deep red & gold accents, subtle animations, museum-like aesthetic)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Ensure mobile responsiveness, accessibility standards, and SEO optimization across the site",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-7",
+      "summary": "Add citations/sources areas and placeholders for future research and oral histories",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-8",
+      "summary": "Add Contact/Family Contributions submission form for relatives and researchers",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Regal Sharma Family Heritage Archive Website (History, Lineage, Timeline, Archives, Contributions)",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

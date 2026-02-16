@@ -1,0 +1,504 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Regal Sharma Family Heritage Archive Website — Frontend Implementation Plan",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "summary": "Create multi-page site structure with top-level navigation and routes for all required sections.",
+      "acceptanceCriteria": [
+        "Navigation is present on desktop and collapses appropriately on mobile.",
+        "Each route renders a dedicated page with consistent layout (header/nav/footer) and page title.",
+        "All pages are reachable without dead links and do not require authentication."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "create",
+          "description": "Add the app shell and client-side routing for: Home, Founding Era, Akhnoor Sovereignty, Forts & Residences, Lineage & Family Tree, Royal Administration & Legacy, Post-1947 Transition, Current Generation, Gallery & Archives, Timeline, and Contact / Family Contributions; ensure each route renders within the shared layout."
+        },
+        {
+          "path": "frontend/src/components/layout/SiteLayout.tsx",
+          "operation": "create",
+          "description": "Create a consistent page layout with header/nav/footer wrapper applied to every route, ensuring consistent spacing and typography across pages."
+        },
+        {
+          "path": "frontend/src/components/navigation/TopNav.tsx",
+          "operation": "create",
+          "description": "Implement top navigation with desktop links and a mobile-collapsing menu; use shadcn-ui components (e.g., Navigation Menu + Sheet/Drawer patterns) to support responsive navigation. Verify the component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/src/pages/HomePage.tsx",
+          "operation": "create",
+          "description": "Create the Home page route component with page title and placeholder sections to be filled in subsequent requirements."
+        },
+        {
+          "path": "frontend/src/pages/FoundingEraPage.tsx",
+          "operation": "create",
+          "description": "Create the Founding Era page route component with consistent headings and layout."
+        },
+        {
+          "path": "frontend/src/pages/AkhnoorSovereigntyPage.tsx",
+          "operation": "create",
+          "description": "Create the Akhnoor Sovereignty page route component with consistent headings and layout."
+        },
+        {
+          "path": "frontend/src/pages/FortsResidencesPage.tsx",
+          "operation": "create",
+          "description": "Create the Forts & Residences page route component with consistent headings and layout."
+        },
+        {
+          "path": "frontend/src/pages/LineageFamilyTreePage.tsx",
+          "operation": "create",
+          "description": "Create the Lineage & Family Tree page route component with consistent headings and layout."
+        },
+        {
+          "path": "frontend/src/pages/RoyalAdministrationLegacyPage.tsx",
+          "operation": "create",
+          "description": "Create the Royal Administration & Legacy page route component with consistent headings and layout."
+        },
+        {
+          "path": "frontend/src/pages/Post1947TransitionPage.tsx",
+          "operation": "create",
+          "description": "Create the Post-1947 Transition page route component with consistent headings and layout."
+        },
+        {
+          "path": "frontend/src/pages/CurrentGenerationPage.tsx",
+          "operation": "create",
+          "description": "Create the Current Generation page route component with consistent headings and layout."
+        },
+        {
+          "path": "frontend/src/pages/GalleryArchivesPage.tsx",
+          "operation": "create",
+          "description": "Create the Gallery & Archives page route component with consistent headings and layout."
+        },
+        {
+          "path": "frontend/src/pages/TimelinePage.tsx",
+          "operation": "create",
+          "description": "Create the Timeline page route component with consistent headings and layout."
+        },
+        {
+          "path": "frontend/src/pages/ContactContributionsPage.tsx",
+          "operation": "create",
+          "description": "Create the Contact / Family Contributions page route component with consistent headings and layout."
+        }
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "summary": "Implement historically grounded, museum-like visual design with parchment texture, deep red/gold accents, elegant typography, and subtle animations.",
+      "acceptanceCriteria": [
+        "A consistent design system (colors/typography/spacing) is applied across all pages.",
+        "Animations are subtle (e.g., fade/slide on section entry) and respect reduced-motion preferences.",
+        "The UI avoids overly modern/flashy elements and reads as an archive/chronicle."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/index.css",
+          "operation": "create",
+          "description": "Define global design tokens (colors, typography, spacing), base element styles, focus states, and subtle motion classes; apply parchment-like background treatment and deep red/gold accents using CSS variables and Tailwind layers."
+        },
+        {
+          "path": "frontend/tailwind.config.js",
+          "operation": "modify",
+          "description": "Extend Tailwind theme to include heritage palette aliases (deep red, muted gold, parchment neutrals), typography tuning, and animation utilities appropriate for calm, scholarly motion."
+        },
+        {
+          "path": "frontend/src/components/layout/SiteLayout.tsx",
+          "operation": "modify",
+          "description": "Apply the museum-like styling at the layout level (background texture layer, content container, typographic rhythm, ornamental dividers) so all pages inherit the consistent aesthetic."
+        },
+        {
+          "path": "frontend/public/assets/generated/parchment-texture.dim_2048x2048.png",
+          "operation": "create",
+          "description": "Add generated parchment texture asset and reference it from the global/layout styling as a subtle background layer (no critical content embedded in the image)."
+        },
+        {
+          "path": "frontend/public/assets/generated/ornamental-divider.dim_2400x300.png",
+          "operation": "create",
+          "description": "Add generated ornamental divider asset and wire it into section separators in layout and/or key pages."
+        },
+        {
+          "path": "frontend/public/assets/generated/sharma-crest-emblem.dim_512x512.png",
+          "operation": "create",
+          "description": "Add generated crest emblem asset and wire it into header/footer branding with appropriate alt text."
+        },
+        {
+          "path": "frontend/public/assets/generated/akhnoor-fort-etching.dim_1800x900.png",
+          "operation": "create",
+          "description": "Add generated Akhnoor fort etching asset and wire it into the Home hero and/or relevant history page sections with appropriate alt text."
+        },
+        {
+          "path": "frontend/public/assets/generated/archival-seal.dim_512x512.png",
+          "operation": "create",
+          "description": "Add generated archival seal asset and wire it into callouts (e.g., contributions page or citations blocks) with appropriate alt text."
+        }
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "summary": "Populate the site with provided historical narrative content and add placeholders for future research, citations, and oral histories.",
+      "acceptanceCriteria": [
+        "All key historical points provided by the user are present in appropriate sections/pages.",
+        "Pages include clearly labeled placeholder blocks for future citations, sources, and oral histories without breaking layout.",
+        "User-facing text is formal and historically careful (no sensational language)."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/content/historyContent.ts",
+          "operation": "create",
+          "description": "Create a single source of truth for the provided historical narrative (structured content blocks per page/section), including placeholders for future research and oral histories."
+        },
+        {
+          "path": "frontend/src/pages/FoundingEraPage.tsx",
+          "operation": "modify",
+          "description": "Render the provided Founding Era narrative sections (including Lakshmandev Singh Sharma context) and include clearly labeled placeholder blocks for future research/oral histories."
+        },
+        {
+          "path": "frontend/src/pages/RoyalAdministrationLegacyPage.tsx",
+          "operation": "modify",
+          "description": "Render the provided narrative points about Lakshmandev Singh Sharma under Maharaja Gulab Singh, the Diwani grant, administrative legacy, and add placeholders for citations and oral histories."
+        },
+        {
+          "path": "frontend/src/pages/AkhnoorSovereigntyPage.tsx",
+          "operation": "modify",
+          "description": "Render the narrative about autonomy over Akhnoor and related sovereignty context, with placeholders for sources and future research."
+        },
+        {
+          "path": "frontend/src/pages/Post1947TransitionPage.tsx",
+          "operation": "modify",
+          "description": "Render the post-1947 transition narrative and include labeled placeholders for additional documentation and oral histories."
+        }
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "summary": "Build the Home page hero, introduction, and highlighted history cards linking to deeper pages.",
+      "acceptanceCriteria": [
+        "Hero section includes a tagline and short introductory paragraph.",
+        "At least 3–6 highlight items link to relevant pages (e.g., Founding Era, Sovereignty, Lineage, Timeline, Archives).",
+        "Home page remains readable and well-spaced on mobile screens."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/HomePage.tsx",
+          "operation": "modify",
+          "description": "Implement Home hero banner with dignified tagline, brief introduction to the royal lineage, and 3–6 highlight cards/sections that link to the required deeper routes; use shadcn-ui Card/Button primitives for consistent styling. Verify the component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/src/components/home/HighlightsGrid.tsx",
+          "operation": "create",
+          "description": "Create a reusable highlights grid component used on Home to present linked historical sections in a calm, museum-like card layout; use shadcn-ui Card patterns. Verify the component's usage instructions before implementing."
+        }
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "summary": "Create an interactive, expandable family tree visualization for the direct lineage with biographical note placeholders and a present-generation note.",
+      "acceptanceCriteria": [
+        "Family tree supports expanding/collapsing or focusing nodes (works on both desktop and mobile).",
+        "Selecting a person shows biographical notes (placeholder text allowed where details are not provided).",
+        "A visible note clarifies Aarav Sharma as the present generation."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/content/lineage.ts",
+          "operation": "create",
+          "description": "Define the direct lineage dataset (Lakshmandev Singh Sharma → ... → Aarav Sharma) with optional biographical note placeholders per person."
+        },
+        {
+          "path": "frontend/src/components/lineage/FamilyTree.tsx",
+          "operation": "create",
+          "description": "Implement an interactive, expandable/focusable family tree component optimized for desktop and mobile; use shadcn-ui Accordion/Collapsible patterns where helpful for expand/collapse UX. Verify the component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/src/components/lineage/PersonDetailsPanel.tsx",
+          "operation": "create",
+          "description": "Create a details panel/modal component that renders the selected person’s biographical notes (placeholder text allowed) with accessible headings and keyboard focus management; use shadcn-ui Dialog (optional) for small screens. Verify the component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/src/pages/LineageFamilyTreePage.tsx",
+          "operation": "modify",
+          "description": "Wire the FamilyTree visualization into the Lineage & Family Tree page and include an explicit visible note that Aarav Sharma represents the present generation carrying forward the legacy."
+        }
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "summary": "Implement an interactive timeline page with chronological milestones, expandable entries, and citation placeholders per milestone.",
+      "acceptanceCriteria": [
+        "Timeline renders a chronological list with expand/collapse or detail view per entry.",
+        "Timeline entries include a dedicated area for citations/sources (can be empty placeholders initially).",
+        "Timeline is keyboard-navigable and readable on mobile."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/content/timeline.ts",
+          "operation": "create",
+          "description": "Create a structured set of chronological milestone entries (initial placeholders allowed) including fields for title, period/date, description, and sources/citations placeholders."
+        },
+        {
+          "path": "frontend/src/components/timeline/TimelineList.tsx",
+          "operation": "create",
+          "description": "Build an interactive timeline list with expand/collapse behavior per entry; use shadcn-ui Accordion components to provide accessible disclosure patterns. Verify the component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/src/pages/TimelinePage.tsx",
+          "operation": "modify",
+          "description": "Render the TimelineList on the Timeline page, ensuring chronological ordering, keyboard operability, and mobile readability."
+        }
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "summary": "Create Gallery & Archives browsing UI with category filtering and an item detail view including metadata fields.",
+      "acceptanceCriteria": [
+        "Archive supports filtering or tabbing by the 4 categories.",
+        "Clicking an item opens a detail view (modal or page) showing metadata fields.",
+        "Initial content may be placeholders but the viewer UI is functional."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/content/archive.ts",
+          "operation": "create",
+          "description": "Define placeholder archive items across categories (Photographs, Letters, Documents, Artifacts) with metadata fields (title, date/period, description, source/citation, notes)."
+        },
+        {
+          "path": "frontend/src/components/archive/ArchiveBrowser.tsx",
+          "operation": "create",
+          "description": "Implement archive browsing UI with category tabs and a grid/list of items; use shadcn-ui Tabs and Card components for filtering and presentation. Verify the component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/src/components/archive/ArchiveItemDetailDialog.tsx",
+          "operation": "create",
+          "description": "Create an item detail view (modal dialog) that shows all required metadata fields and supports keyboard navigation; use shadcn-ui Dialog for accessible modal behavior. Verify the component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/src/pages/GalleryArchivesPage.tsx",
+          "operation": "modify",
+          "description": "Wire the ArchiveBrowser into the Gallery & Archives page and ensure item click opens the detail view with metadata."
+        }
+      ]
+    },
+    {
+      "id": "REQ-8",
+      "summary": "Add Current Generation page profiling Tilak Raj, Rajkumar, and Aarav with a continuity-of-traditions section.",
+      "acceptanceCriteria": [
+        "All three profiles are displayed with consistent styling and clear titles/roles.",
+        "Page includes a dedicated section about continuity of traditions with placeholder text clearly labeled as such.",
+        "Names and honorifics match the user-provided spelling/casing."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/CurrentGenerationPage.tsx",
+          "operation": "modify",
+          "description": "Implement three profile sections with the exact names/honorifics and roles: Rawal/Raja Tilak Raj Singh Sharma (current head), Kunwar Rajkumar Singh Sharma (successor), Bhanwar Aarav Singh Sharma (next generation); include a clearly labeled placeholder section describing continuity of traditions."
+        },
+        {
+          "path": "frontend/src/components/current-generation/ProfileCard.tsx",
+          "operation": "create",
+          "description": "Create a consistent profile card/section component for the three profiles; use shadcn-ui Card and typography patterns for a scholarly presentation. Verify the component's usage instructions before implementing."
+        }
+      ]
+    },
+    {
+      "id": "REQ-9",
+      "summary": "Implement Contact / Family Contributions form UI and submit data to backend for persistence, with validation and success confirmation.",
+      "acceptanceCriteria": [
+        "Form validates required fields and consent before submission.",
+        "On successful submit, the submission is stored via backend API and the UI shows a success confirmation.",
+        "Backend exposes a method to list submissions (for future admin use) without requiring third-party services."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/contributions/ContributionsForm.tsx",
+          "operation": "create",
+          "description": "Build the contributions submission form with fields: name, email, relationship/affiliation, message, optional attachment metadata, and consent checkbox; implement client-side validation and accessible error messaging; use shadcn-ui Input/Textarea/Checkbox/Button components. Verify the component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/src/hooks/useSubmitContribution.ts",
+          "operation": "create",
+          "description": "Create a React Query mutation hook that calls the backend capability submitForm(submissionId, submission) and returns loading/success/error states for the UI."
+        },
+        {
+          "path": "frontend/src/pages/ContactContributionsPage.tsx",
+          "operation": "modify",
+          "description": "Wire the ContributionsForm into the Contact / Family Contributions page, display a success confirmation state on successful submission, and handle backend errors gracefully without requiring authentication."
+        },
+        {
+          "path": "frontend/src/components/contributions/SubmissionSuccessPanel.tsx",
+          "operation": "create",
+          "description": "Create a success confirmation UI block shown after submission, providing a scholarly acknowledgment and next-steps messaging (no promotional tone)."
+        }
+      ]
+    },
+    {
+      "id": "REQ-10",
+      "summary": "Add a consistent Sources / Citations UI block pattern across relevant pages, timeline entries, and archive item details.",
+      "acceptanceCriteria": [
+        "At least the History pages, Timeline, and Archive item detail views include a “Sources / Citations” block.",
+        "When no sources are present, an accessible placeholder message is shown.",
+        "Sources are rendered as plain text and/or links with safe external-link behavior."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/common/SourcesCitationsBlock.tsx",
+          "operation": "create",
+          "description": "Create a reusable “Sources / Citations” block component that renders a list of references (plain text and/or links) with an accessible empty state and safe external-link handling."
+        },
+        {
+          "path": "frontend/src/pages/FoundingEraPage.tsx",
+          "operation": "modify",
+          "description": "Integrate the SourcesCitationsBlock into the Founding Era page in relevant sections with placeholder empty-state messaging."
+        },
+        {
+          "path": "frontend/src/pages/AkhnoorSovereigntyPage.tsx",
+          "operation": "modify",
+          "description": "Integrate the SourcesCitationsBlock into the Akhnoor Sovereignty page in relevant sections with placeholder empty-state messaging."
+        },
+        {
+          "path": "frontend/src/pages/RoyalAdministrationLegacyPage.tsx",
+          "operation": "modify",
+          "description": "Integrate the SourcesCitationsBlock into the Royal Administration & Legacy page in relevant sections with placeholder empty-state messaging."
+        },
+        {
+          "path": "frontend/src/pages/Post1947TransitionPage.tsx",
+          "operation": "modify",
+          "description": "Integrate the SourcesCitationsBlock into the Post-1947 Transition page in relevant sections with placeholder empty-state messaging."
+        },
+        {
+          "path": "frontend/src/components/timeline/TimelineList.tsx",
+          "operation": "modify",
+          "description": "Render SourcesCitationsBlock within each timeline entry’s expanded content to display citations/sources or the empty placeholder state."
+        },
+        {
+          "path": "frontend/src/components/archive/ArchiveItemDetailDialog.tsx",
+          "operation": "modify",
+          "description": "Render SourcesCitationsBlock within the archive item detail view to display an item’s source/citation field or an empty placeholder state."
+        }
+      ]
+    },
+    {
+      "id": "REQ-11",
+      "summary": "Ensure mobile responsiveness and accessibility: semantic headings, keyboard navigation, contrast, focus states, alt text, and reduced-motion support.",
+      "acceptanceCriteria": [
+        "All pages are usable on common mobile widths without horizontal scrolling.",
+        "Interactive components (nav, timeline, tree, gallery viewer, form) are keyboard-operable with visible focus.",
+        "Reduced-motion preference is respected and images include meaningful alt text (placeholders allowed)."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/index.css",
+          "operation": "modify",
+          "description": "Add/verify global focus ring styles, contrast-friendly defaults, and reduced-motion handling for any global animations/transitions."
+        },
+        {
+          "path": "frontend/src/components/navigation/TopNav.tsx",
+          "operation": "modify",
+          "description": "Ensure mobile nav is keyboard-operable (focus trapping if using a sheet), uses semantic landmarks, and provides visible focus states; ensure links are reachable without dead-ends."
+        },
+        {
+          "path": "frontend/src/components/lineage/FamilyTree.tsx",
+          "operation": "modify",
+          "description": "Ensure expand/collapse and person selection are keyboard-accessible, with visible focus indicators and mobile-friendly touch targets."
+        },
+        {
+          "path": "frontend/src/components/timeline/TimelineList.tsx",
+          "operation": "modify",
+          "description": "Ensure timeline disclosure controls are keyboard-operable, have clear focus states, and do not rely on motion-only cues."
+        },
+        {
+          "path": "frontend/src/components/archive/ArchiveBrowser.tsx",
+          "operation": "modify",
+          "description": "Ensure category tabs/filtering are accessible (keyboard navigation, aria labeling where appropriate) and grid/list remains readable on small screens."
+        },
+        {
+          "path": "frontend/src/components/archive/ArchiveItemDetailDialog.tsx",
+          "operation": "modify",
+          "description": "Ensure the item detail dialog has correct focus management, close controls, and keyboard navigation, and that metadata is readable on mobile."
+        },
+        {
+          "path": "frontend/src/components/contributions/ContributionsForm.tsx",
+          "operation": "modify",
+          "description": "Ensure form labels, required indicators, validation messages, and consent checkbox are accessible; ensure no horizontal scrolling on mobile."
+        },
+        {
+          "path": "frontend/src/pages/HomePage.tsx",
+          "operation": "modify",
+          "description": "Add meaningful alt text for decorative/illustrative images used on the Home page (placeholders allowed) and ensure responsive layout for hero/highlights."
+        }
+      ]
+    },
+    {
+      "id": "REQ-12",
+      "summary": "Add SEO essentials: per-route titles and meta descriptions where feasible, meaningful headings, and indexable text content.",
+      "acceptanceCriteria": [
+        "Each route sets an appropriate document title.",
+        "Each page has a single H1 and a logical heading hierarchy beneath it.",
+        "Primary historical and lineage content is rendered as text in the DOM (not embedded solely in images)."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/hooks/usePageMeta.ts",
+          "operation": "create",
+          "description": "Create a small hook to set document.title (and optionally meta description via DOM APIs) per route without adding authentication or third-party SEO services."
+        },
+        {
+          "path": "frontend/src/pages/HomePage.tsx",
+          "operation": "modify",
+          "description": "Set route-specific document title and meta description using usePageMeta; ensure a single H1 and clear heading hierarchy; ensure primary content is text in the DOM."
+        },
+        {
+          "path": "frontend/src/pages/FoundingEraPage.tsx",
+          "operation": "modify",
+          "description": "Set route-specific document title and meta description using usePageMeta; enforce single H1 and logical headings; ensure narrative content is text."
+        },
+        {
+          "path": "frontend/src/pages/AkhnoorSovereigntyPage.tsx",
+          "operation": "modify",
+          "description": "Set route-specific document title and meta description using usePageMeta; enforce single H1 and logical headings; ensure narrative content is text."
+        },
+        {
+          "path": "frontend/src/pages/FortsResidencesPage.tsx",
+          "operation": "modify",
+          "description": "Set route-specific document title and meta description using usePageMeta; enforce single H1 and logical headings; ensure primary content is text."
+        },
+        {
+          "path": "frontend/src/pages/LineageFamilyTreePage.tsx",
+          "operation": "modify",
+          "description": "Set route-specific document title and meta description using usePageMeta; enforce single H1 and logical headings; ensure lineage data is presented as text (in addition to any visualization)."
+        },
+        {
+          "path": "frontend/src/pages/RoyalAdministrationLegacyPage.tsx",
+          "operation": "modify",
+          "description": "Set route-specific document title and meta description using usePageMeta; enforce single H1 and logical headings; ensure narrative content is text."
+        },
+        {
+          "path": "frontend/src/pages/Post1947TransitionPage.tsx",
+          "operation": "modify",
+          "description": "Set route-specific document title and meta description using usePageMeta; enforce single H1 and logical headings; ensure narrative content is text."
+        },
+        {
+          "path": "frontend/src/pages/CurrentGenerationPage.tsx",
+          "operation": "modify",
+          "description": "Set route-specific document title and meta description using usePageMeta; enforce single H1 and logical headings; ensure profiles are rendered as text."
+        },
+        {
+          "path": "frontend/src/pages/GalleryArchivesPage.tsx",
+          "operation": "modify",
+          "description": "Set route-specific document title and meta description using usePageMeta; enforce single H1 and logical headings; ensure archive metadata is rendered as text."
+        },
+        {
+          "path": "frontend/src/pages/TimelinePage.tsx",
+          "operation": "modify",
+          "description": "Set route-specific document title and meta description using usePageMeta; enforce single H1 and logical headings; ensure timeline milestones are text content."
+        },
+        {
+          "path": "frontend/src/pages/ContactContributionsPage.tsx",
+          "operation": "modify",
+          "description": "Set route-specific document title and meta description using usePageMeta; enforce single H1 and logical headings; ensure form labels/help text are present in the DOM."
+        }
+      ]
+    }
+  ]
+}
